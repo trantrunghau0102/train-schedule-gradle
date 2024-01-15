@@ -4,6 +4,6 @@ WORKDIR /app
 
 COPY . .
 
-RUN gradle build
+RUN ./gradlew build --no-daemon
 
 CMD ["java", "-jar", "build/libs/my-app.jar"]
